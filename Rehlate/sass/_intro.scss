@@ -1,0 +1,42 @@
+body{
+    font-size: 16px;
+    font-family: 'Lama Sans' !important;
+    background-image: url('../assets/SVG/slide-img-phone.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.intro{
+    @include structure(column, space-between, center);
+    margin: 2.75rem 1.25rem;
+    h1{
+        @include text(2.375rem, 600, 3.063rem);
+        text-align: center;
+        letter-spacing: -0.02em;
+        padding: 0.781rem;
+    }
+    p{
+        @include text(1.3rem, 200, 1.875rem);
+        text-align: center;
+        letter-spacing: -0.02em;
+        padding: 0.781rem;
+    }
+    button{
+        @include button(black, #FEC430, none);
+        margin: 1.25rem 0;
+       
+    }
+    >img{
+        margin-left: -14rem
+       
+    }
+    >div{
+        @include structure(column, center, center);
+        margin-top: -9rem;
+      
+    }
+   
+   
+}
+
+
