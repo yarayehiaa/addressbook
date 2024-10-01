@@ -21,4 +21,22 @@
       }
     }
   }
+  @media screen and (min-width: 75rem) {
+    margin: 0 3.75rem;
+    .reviews-cards {
+      @include structure(row-reverse, stretch, center);
+      gap: 1.5rem;
+      p{
+        @include text(1.125rem, 100, 1.75rem);
+      }
+    }
+    .desktop{
+      @include structure(row, center, center);
+      button{
+        background-color: transparent;
+        border:0;
+        gap:1.5rem;
+      }
+    }
+  }
 }

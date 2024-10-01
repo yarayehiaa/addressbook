@@ -61,4 +61,16 @@
       }
     }
   }
+  @media screen and (min-width: 75rem) {
+    .plans {
+      margin: 0 3.75rem;
+      margin-top: 6.938rem;
+
+      @include structure(row-reverse, space-between, center);
+    }
+    #purple-card {
+      margin-top: -2.938rem;
+      
+    }
+  }
 }

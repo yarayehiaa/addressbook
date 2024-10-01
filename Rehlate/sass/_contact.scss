@@ -56,4 +56,29 @@
         margin-top: 2.5rem;
     }
   }
+  @media screen and (min-width: 75rem) {
+    @include structure(column, stretch, flex-end);
+    margin: 0 3.75rem;
+    >div{
+      
+
+      @include structure(row-reverse, stretch, flex-start);
+      gap: 4rem;
+      .contact-form {
+        flex:6;
+        
+      }
+      ul{
+        flex:4;
+        li{
+          @include structure(row-reverse, center, center);
+          text-align: right;
+          h5{
+            margin-bottom: 1rem;
+          }
+        }
+      }
+    }
+   
+  }
 }

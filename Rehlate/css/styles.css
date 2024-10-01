@@ -109,6 +109,9 @@
   }
   .desktop ul {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
   }
   .desktop ul li {
     margin: 0 2.75rem;
@@ -162,11 +165,12 @@ body {
 }
 .intro p {
   font-size: 1.3rem;
-  font-weight: 200;
+  font-weight: 100;
   line-height: 1.875rem;
   text-align: center;
   letter-spacing: -0.02em;
   padding: 0.781rem;
+  font-family: "Lama Sans-thin";
 }
 .intro button {
   display: flex;
@@ -175,7 +179,7 @@ body {
   align-items: center;
   font-family: "Lama Sans" !important;
   gap: 0.75rem;
-  background-color: #FEC430;
+  background-color: #fec430;
   border: none;
   border-radius: 15px;
   padding: 0.75rem 4.5rem;
@@ -197,6 +201,27 @@ body {
   margin-top: -9rem;
 }
 
+@media screen and (min-width: 75rem) {
+  body {
+    background-image: url("../assets/SVG/slide-img-desktop.svg");
+  }
+  .intro {
+    margin: 8.25rem 25%;
+    padding-top: 3.625rem;
+  }
+  .intro h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: 4.5rem;
+    margin: 0;
+    padding: 0;
+  }
+  .intro p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 2.5rem;
+  }
+}
 .locations {
   text-align: right;
   margin-right: 1.25rem;
@@ -222,6 +247,12 @@ body {
   width: 14.688rem;
   max-height: 23.125rem;
 }
+@media screen and (min-width: 75rem) {
+  .locations .caraousel .caraousel-item img {
+    width: 23.75rem;
+    max-height: 37.5rem;
+  }
+}
 .locations .caraousel .caraousel-item .caraousel-card {
   margin-top: -5rem;
   background-color: white;
@@ -240,24 +271,19 @@ body {
   font-weight: 200;
   line-height: 0.75rem;
 }
+@media screen and (min-width: 75rem) {
+  .locations {
+    margin: 0 3.75rem;
+    padding-top: 6.938rem;
+  }
+  .locations .caraousel {
+    gap: 1.75rem;
+  }
+}
 
 .services {
   text-align: center;
   margin: 0 1.25rem;
-}
-.services h4 {
-  font-size: 1rem;
-  font-weight: 900;
-  line-height: 1rem;
-  margin: 0 1.5rem;
-  margin-bottom: 0.75rem;
-}
-.services h2 {
-  font-size: 1.5rem;
-  font-weight: 900;
-  line-height: 1.5rem;
-  margin: 0 1.5rem;
-  margin-bottom: 2.375rem;
 }
 .services > img {
   margin-bottom: -7rem;
@@ -291,6 +317,17 @@ body {
   font-weight: 400;
   line-height: 1.75rem;
   font-family: Lama Sans-thin;
+}
+@media screen and (min-width: 75rem) {
+  .services {
+    margin: 0 3.75rem;
+  }
+  .services .services-cards {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .payment-plans {
@@ -386,6 +423,19 @@ body {
   cursor: pointer;
   color: #191919;
 }
+@media screen and (min-width: 75rem) {
+  .payment-plans .plans {
+    margin: 0 3.75rem;
+    margin-top: 6.938rem;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .payment-plans #purple-card {
+    margin-top: -2.938rem;
+  }
+}
 
 .Reviews {
   text-align: center;
@@ -419,6 +469,34 @@ body {
   font-size: 1rem;
   font-weight: 300;
   line-height: 1.6rem;
+}
+@media screen and (min-width: 75rem) {
+  .Reviews {
+    margin: 0 3.75rem;
+  }
+  .Reviews .reviews-cards {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: stretch;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .Reviews .reviews-cards p {
+    font-size: 1.125rem;
+    font-weight: 100;
+    line-height: 1.75rem;
+  }
+  .Reviews .desktop {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .Reviews .desktop button {
+    background-color: transparent;
+    border: 0;
+    gap: 1.5rem;
+  }
 }
 
 .contact {
@@ -502,6 +580,38 @@ body {
 .contact ul li + li {
   margin-top: 2.5rem;
 }
+@media screen and (min-width: 75rem) {
+  .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: flex-end;
+    margin: 0 3.75rem;
+  }
+  .contact > div {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: stretch;
+    align-items: flex-start;
+    gap: 4rem;
+  }
+  .contact > div .contact-form {
+    flex: 6;
+  }
+  .contact > div ul {
+    flex: 4;
+  }
+  .contact > div ul li {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+  }
+  .contact > div ul li h5 {
+    margin-bottom: 1rem;
+  }
+}
 
 footer {
   text-align: right;
@@ -557,6 +667,38 @@ footer .ender p {
   font-weight: 300;
   line-height: 1.8rem;
 }
+@media screen and (min-width: 75rem) {
+  footer {
+    padding: 1.063rem 3.75rem;
+    padding-top: 5.875rem;
+  }
+  footer hr {
+    margin: 1.5rem 0;
+  }
+  footer .footer-inline {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: stretch;
+    align-items: center;
+    gap: 5.813rem;
+  }
+  footer .footer-inline .col1 {
+    flex: 2;
+  }
+  footer .footer-inline .row {
+    flex: 4;
+    flex-wrap: nowrap;
+  }
+  footer .ender {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+  footer .ender .inline {
+    margin-top: 0;
+  }
+}
 
 * {
   margin: 0;
@@ -599,4 +741,17 @@ h2 {
   font-size: 1.875rem;
   font-weight: 900;
   line-height: 1.875rem;
+}
+
+@media screen and (min-width: 75rem) {
+  h4 {
+    font-size: 1.5rem;
+    font-weight: 900;
+    line-height: 1.5rem;
+  }
+  h2 {
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 3rem;
+  }
 }/*# sourceMappingURL=styles.css.map */

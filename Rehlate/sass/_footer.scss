@@ -45,4 +45,31 @@ footer{
             @include text(0.9rem, 300, 1.8rem);
         }
     }
+    @media screen and (min-width: 75rem) {
+       padding:1.063rem 3.75rem;
+       padding-top: 5.875rem;
+       hr{
+           margin: 1.5rem 0;
+       }
+       .footer-inline{
+           @include structure(row-reverse, stretch, center);
+              gap: 5.813rem;
+           .col1{
+               flex:2
+           }
+           .row{
+               flex:4;
+               flex-wrap: nowrap;
+               
+           }
+          
+       }
+       .ender{
+          @include structure(row-reverse, space-between, center);
+          .inline{
+              margin-top: 0;
+          }
+       }
+      
+    }
 }

@@ -18,7 +18,9 @@
     text-wrap: nowrap;
     @include structure(row-reverse, space-between, stretch);
     ul {
-      display: flex;
+      @include structure(row, center, flex-end);
+
+
       li {
         margin: 0 2.75rem;
         a {

@@ -12,6 +12,11 @@
       img {
         width: 14.688rem;
         max-height: 23.125rem;
+        @media screen and (min-width: 75rem) {
+          width: 23.75rem;
+          max-height: 37.5rem;
+          
+        }
       }
       .caraousel-card {
         margin-top: -5rem;
@@ -29,5 +34,15 @@
         @include text(0.75rem, 200, 0.75rem);
       }
     }
+  }
+  @media screen and (min-width: 75rem) {
+    margin: 0 3.75rem;
+    padding-top: 6.938rem;
+    .caraousel{
+      gap:1.75rem;
+    }
+   
+ 
+    
   }
 }

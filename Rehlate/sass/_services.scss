@@ -1,16 +1,7 @@
 .services {
   text-align: center;
   margin: 0 1.25rem;
-  h4 {
-    @include text(1rem, 900, 1rem);
-    margin: 0 1.5rem;
-    margin-bottom: 0.75rem;
-  }
-  h2 {
-    @include text(1.5rem, 900, 1.5rem);
-    margin: 0 1.5rem;
-    margin-bottom: 2.375rem;
-  }
+
   > img {
     margin-bottom: -7rem;
     height: 6.938rem;
@@ -34,5 +25,12 @@
         font-family: Lama Sans-thin;
       }
     }
+  }
+  @media screen and (min-width: 75rem) {
+    margin: 0 3.75rem;
+    .services-cards {
+      @include structure(row-reverse, space-between, center);
+    }
+    
   }
 }
